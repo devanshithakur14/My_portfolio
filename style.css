@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+.chapter-1_page{
+    background-image: url(portfolio_images/chapter1back1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.chapter-2_page{
+    background-image: url(portfolio_images/chapter2back22.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.chapter-3_page{
+    background-image: url(portfolio_images/chapter3back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.home-page{
+    background-image: url(portfolio_images/homeback.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.thankyou-page{
+    background-image: url(portfolio_images/thankyouback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.button{
+    text-decoration: none;
+    background-color: #8B6A4E;
+    color: #FFF8E7;
+    border: 2px double black;
+    border-radius: 8px;
+    height: 20px;
+    padding: 6px;
+    font-family: Great vibes;
+    font-size: 25px;
+    transition: 0.5s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.button:hover{
+    color: #5F4434;
+}
+.button-top{
+    display: inline-block;
+    margin-top: 55px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+.button-bottom{
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+#h21{
+    display: inline-block;
+    color: #2F2A24;
+    margin-left: 300px;
+    font-family: Great vibes;
+    font-size: 36px;
+}
+.rotate-left{
+    transform: rotate(-3deg);
+}
+.rotate-right{
+    transform: rotate(3deg);
+}
+.polaroid{
+    width: 400px;
+    background: rgb(241, 241, 240);
+    padding: 15px ;
+    border-radius: 3px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+}
+.polaroid:hover{
+    transform: scale(1.05);
+}
+.polaroid img{
+    width: 100%;
+    display: block;
+}
+.polaroid p{
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #5E5347;
+    font-family:"Caveat", cursive;
+}
+.memory-row{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    align-items: flex-start;
+    margin-bottom: 90px;
+    margin-top: 100px;
+}
+.single{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.single-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.bottomp{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 60px;
+    color: #2F2A24;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: dashed underline;
+    font-family: Great vibes;
+}
+.hero-photo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-photo img{
+    width: 1250px;
+    height: 640px;
+    margin-top: 10px;
+}
+.explore-button{
+    text-decoration: none;
+    background-color: #8B6A4E;
+    color: #FFF8E7;
+    border: 2px double black;
+    border-radius: 8px;
+    height: 20px;
+    padding: 6px;
+    padding-bottom: 18px;
+    font-family: Great vibes;
+    font-size: 25px;
+    transition: 0.5s ease;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
+    margin-left: 600px;
+}
+.explore-button:hover{
+    transform: scale(1.05);
+}
+.thankyoudiv{
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 70px;
+}
+#chapters{
+    margin-top: 300px;
+}
+.chapter{
+    display: block;
+    width: 410px;
+    transition: 0.5s ease;
+}
+.chapter img{
+    width: 100%;
+    display: block;
+}
+.chapter:hover{
+    transform: translate(-15px) rotate(2deg);
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,.3));
+}
+.chapter1{
+    margin-left: 200px;
+    transform: rotate(-5deg);
+}
+.chapter2{
+    margin-left: 750px;
+    margin-top: 100px;
+    transform: rotate(6deg);
+}
+.chapter3{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    transform: rotate(-5deg);
+}
+body{
+    animation: slideIn .7s ease;
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateX(80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    html,body{
+        overflow-x:hidden;
+    }
+    .home-page,
+    .chapter-1_page,
+    .chapter-2_page,
+    .chapter-3_page,
+    .thankyou-page{
+        background-size:cover;
+        background-position:center;
+        background-attachment:scroll;
+    }
+    #h21{
+        display:block;
+        margin:25px auto;
+        text-align:center;
+        font-size:28px;
+    }
+    .button-top{
+        margin:20px;
+    }
+    .button-bottom{
+        display:block;
+        width:fit-content;
+        margin:40px auto;
+    }
+    .hero-photo img{
+        width:95%;
+        height:auto;
+    }
+    .explore-button{
+        display:block;
+        width:fit-content;
+        margin:-40px auto 0 auto;
+        font-size:22px;
+    }
+
+    .polaroid{
+        width:90%;
+        max-width:340px;
+        margin:auto;
+    }
+    .memory-row{
+        flex-direction:column;
+        align-items:center;
+        gap:50px;
+        margin-top:60px;
+        margin-bottom:60px;
+    }
+    .single,
+    .single-right{
+        display:flex;
+        justify-content:center;
+        margin:60px 0;
+    }
+    .bottomp{
+        display:block;
+        margin:50px auto 20px;
+        text-align:center;
+        width:90%;
+        font-size:28px;
+    }
+    .thankyoudiv{
+        margin:40px auto;
+        text-align:center;
+        display:block;
+        width:90%;
+    }
+    #chapters{
+        margin-top:120px;
+    }
+    .chapter{
+        width:85%;
+        max-width:330px;
+        margin:50px auto;
+    }
+    .chapter1,
+    .chapter2,
+    .chapter3{
+        margin:50px auto;
+    }
+
+    .chapter1{
+        transform:rotate(-4deg);
+    }
+    .chapter2{
+        transform:rotate(4deg);
+    }
+    .chapter3{
+        transform:rotate(-4deg);
+    }
+
+}
